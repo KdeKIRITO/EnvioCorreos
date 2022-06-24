@@ -20,12 +20,12 @@ try {
     $mail->isSMTP();                                            
     $mail->Host       = 'smtp.gmail.com';                     
     $mail->SMTPAuth   = true;                                  
-    $mail->Username   = 'diegofergar22@gmail.com';                     
-    $mail->Password   = '1003908723';                               
+    $mail->Username   = 'name@gmail.com';                     
+    $mail->Password   = 'password';                               
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            
     $mail->Port       = 465;                                    
     
-    $mail->setFrom('diegofergar22@gmail.com', 'Mailer');
+    $mail->setFrom('name@gmail.com', 'Mailer');
     $mail->addAddress($correo, 'Joe User');       
 
     $mail->isHTML(true);                                  
